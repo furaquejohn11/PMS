@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+td {
+    padding: 10px;
+}
+
+.modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: 100px; Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-content{
+    padding: 8px;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    
+}
+
+.modal-content aside {
+    display: flex;
+    flex-flow: row-reverse;
+}
