@@ -35,7 +35,7 @@
         <!-- <form action="" method="post">
             <input type="submit" id="myBtn" value="Add">
         </form> -->
-        <button onclick="test()">Test</button>
+        <button onclick="handleAddPatient()">Add Patient</button>
         <table>
             <tr>
                 <th>Patient ID</th>
@@ -72,18 +72,18 @@
                     <button onclick="handleModalExit()">EXIT</button>
                 </aside>
                 
-                <form action="">
+                <form method="post" action="database/addpatient.php">
                     <label for="">Id</label>
                     <br>
-                    <input type="text" name="" id="">
+                    <input type="text" name="id" id="">
                     <br>
                     <label for="">Name</label>
                     <br>
-                    <input type="text" name="" id="">
+                    <input type="text" name="name" id="">
                     <br>
                     <label for="">Address</label>
                     <br>
-                    <input type="text" name="" id="">
+                    <input type="text" name="address" id="">
                     <br>
                     <input type="submit" value="Submit">
                 </form>

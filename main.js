@@ -1,5 +1,5 @@
 
-const test = () => {
+const handleAddPatient = () => {
     document.getElementById("myModal").style.display = "flex";
 }
 
