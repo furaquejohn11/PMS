@@ -25,15 +25,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PMS</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
     <div>
         <header>
-            <img src="img/logo.png" alt="" srcset="">
-            <h2>MENTAL HEALTH CASE PATIENT MANAGEMENT SYSTEM</h2>
+            <img src="img/pms-logo.png" alt="" srcset="">
+            <h2 style="font-weight: 600;">MENTAL HEALTH CASE PATIENT MANAGEMENT SYSTEM</h2>
         </header>
         
         <div class="btn-div">
@@ -45,6 +45,7 @@
                 <th>Patient ID</th>
                 <th>Name</th>
                 <th>Address</th>
+                <th></th>
             </tr>
             
             <!-- Display the data from the list of Patient objects -->
@@ -59,11 +60,11 @@
                         <input type="hidden" name="patient_id" value="<?php echo $patient->get_id(); ?>">
                         <input type="hidden" name="name" value="<?php echo $patient->get_name(); ?>">
                         <input type="hidden" name="address" value="<?php echo $patient->get_address(); ?>">
-                        <button type="submit" id="edit" name="edit">EDIT</button>
+                        <button type="submit" class="btn-edit" id="edit" name="edit">EDIT</button>
                     </form>
                     <form method="post" action="database/delete_patient.php">
                         <input type="hidden" name="patient_id" value="<?php echo $patient->get_id(); ?>">
-                        <button type="submit" name="delete">DELETE</button>
+                        <button type="submit" class="btn-delete" name="delete">DELETE</button>
                     </form>
 
                 </td>

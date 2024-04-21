@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color: #f2f2f3;
 }
 
 header {
@@ -19,15 +20,32 @@ header {
     align-items: center;
 }
 header img {
-    width: 40px;
-    height: 40px;   
+    width: 50px;
+    height: 50px;   
 }
 
 .btn-div {
     display: flex;
-    margin-top: 10px;
+    margin: 8px 0;
     flex-direction: row-reverse;
 }
+
+.btn-div button {
+    background-color: #00775d; /* Green color */
+    border: 2px solid #00775d; /* Green border */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transition effect */
+}
+
+.btn-div button:hover {
+    background-color: #006655; /* Darker green on hover */
+    border-color: #006655; /* Darker green border on hover */
+}
+
+
 .btn-div > button,aside > button,  .modal input[type="submit"] {
     padding: 0 8px;
 }
@@ -35,10 +53,47 @@ form button {
     width:60px;
     margin-left: 8px;
 }
-
-
+tr {
+    border-radius: 8px;
+}
+table th {
+    background-color: #009979;
+    color: white;
+    font-weight:500;
+    padding: 10px;
+}
 td {
     padding: 10px;
+    background-color: #fefeff;
+}
+/* Edit button */
+.btn-edit {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Delete button */
+.btn-delete {
+    background-color: #D10000;
+    border: 2px solid #9B111E;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #9B111E;
+    border-color: #9B111E;
 }
 
 .modal{
