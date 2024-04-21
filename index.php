@@ -31,7 +31,15 @@
 </head>
 <body>
     <div>
-        <button onclick="handleAddPatient()">Add Patient</button>
+        <header>
+            <img src="img/logo.png" alt="" srcset="">
+            <h2>MENTAL HEALTH CASE PATIENT MANAGEMENT SYSTEM</h2>
+        </header>
+        
+        <div class="btn-div">
+            <button onclick="handleAddPatient()">Add Patient</button>
+        </div>
+        
         <table>
             <tr>
                 <th>Patient ID</th>
@@ -67,11 +75,14 @@
         <div id="myModal" class="modal">
             <div class="modal-content">  
                 <aside>
-                    <button onclick="handleModalExit()">EXIT</button>
+                    <button onclick="handleModalExit()">X</button>
                 </aside>
                 
-                <form method="post" action="database/add_patient.php">            
-                    <h2>Patient Information</h2>
+                <form method="post" action="database/add_patient.php"> 
+                    <span>
+                        <h2>Patient Information</h2>
+                    </span>           
+                    
                     <label>Name</label>
                     <br>
                     <input type="text" name="name" id="pt-name" required>
@@ -89,11 +100,13 @@
         <div id="editModal" class="modal">
             <div class="modal-content">           
                 <aside>
-                    <button onclick="handleModalExit()">EXIT</button>
+                    <button onclick="handleModalExit()">X</button>
                 </aside>           
                 <form method="post" action="database/edit_patient.php">
                     
-                    <h2>Patient Information</h2>
+                    <span>
+                        <h2>Patient Information</h2>
+                    </span>
                     
                     <label>Id</label>
                     <br>

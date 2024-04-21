@@ -1,7 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
+
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+header img {
+    width: 40px;
+    height: 40px;   
+}
+
+.btn-div {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+}
+.btn-div > button,aside > button,  .modal input[type="submit"] {
+    padding: 0 8px;
+}
+form button {
+    width:60px;
+    margin-left: 8px;
+}
+
+
 td {
     padding: 10px;
 }
@@ -24,21 +59,29 @@ td {
     justify-content: center;
 
 }
-
 .modal-content{
+    border-radius: 8px;
     padding: 8px;
     background-color: #fff;
     width: 300px;
     height: 400px;
     
 }
-
+.modal span {
+    display: flex;
+    justify-content: center;
+}
 .modal-content aside {
     display: flex;
     flex-flow: row-reverse;
 }
+.modal form {
+    padding: 8px;
+}
+.modal input{
+    margin-bottom: 8px;
+}
 
-  
 input[name="id"] {
     border: 1px solid red; 
 }

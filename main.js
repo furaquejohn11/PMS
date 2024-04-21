@@ -27,12 +27,8 @@ const handleEdit = (event) =>{
 
 
 const handleAddPatient = () => {
-    // document.getElementById("pt-id").value = "";
-    // document.getElementById("pt-name").value = "";
-    // document.getElementById("pt-add").value = "";
     document.getElementById("myModal").style.display = "flex";
-    
-    
+      
 }
 
 const handleModalExit = () => {
@@ -40,25 +36,22 @@ const handleModalExit = () => {
     document.getElementById("editModal").style.display = "none";
 }
 
-// Closing modal for adding patient
 window.onclick = (event) => {
-    const modal = document.getElementById("myModal");
-    const modalContent = modal.querySelector(".modal-content");
+    // Closing modal for adding patient
+    const addModal = document.getElementById("myModal");
+    const addModalContent = addModal.querySelector(".modal-content");
 
-    if (event.target == modal && !modalContent.contains(event.target)) {
-        modal.style.display = "none";
+    if (event.target == addModal && !addModalContent.contains(event.target)) {
+        addModal.style.display = "none";
         document.getElementById("patient-id").style.display = "none";
-        
     }
-}
-// Closing modal for editing patient
-window.onclick = (event) => {
-    const modal = document.getElementById("editModal");
-    const modalContent = modal.querySelector(".modal-content");
 
-    if (event.target == modal && !modalContent.contains(event.target)) {
-        modal.style.display = "none";
-        
+    // Closing modal for editing patient
+    const editModal = document.getElementById("editModal");
+    const editModalContent = editModal.querySelector(".modal-content");
+
+    if (event.target == editModal && !editModalContent.contains(event.target)) {
+        editModal.style.display = "none";
     }
 }
 
