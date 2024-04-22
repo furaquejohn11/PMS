@@ -114,12 +114,21 @@ td {
     justify-content: center;
 
 }
+.modal button {
+    background-color:#9B111E;
+    border: none;
+    color:white;
+    border-radius: 50%;
+}
+.modal button:hover {
+    background-color: #D10000 ;
+}
 .modal-content{
     border-radius: 8px;
-    padding: 8px;
+    padding: 12px;
     background-color: #fff;
     width: 300px;
-    height: 400px;
+    height: 350px;
     
 }
 .modal span {
@@ -135,6 +144,18 @@ td {
 }
 .modal input{
     margin-bottom: 8px;
+    width: 100%;
+    
+}
+input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    height: 30px;
+    background-color: #009979;
+    color: white;
+}
+input[type="submit"]:hover {
+    background-color: #006655;
 }
 
 input[name="id"] {

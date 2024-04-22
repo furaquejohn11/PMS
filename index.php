@@ -80,7 +80,7 @@
                 </aside>
                 
                 <form method="post" action="database/add_patient.php"> 
-                    <span>
+                    <span style="margin-bottom: 20px;">
                         <h2>Patient Information</h2>
                     </span>           
                     
@@ -92,7 +92,7 @@
                     <br>
                     <input type="text" name="address" id="pt-add" required>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" style="margin-top: 20px;" value="Submit">
                 </form>
             </div>
         </div>
